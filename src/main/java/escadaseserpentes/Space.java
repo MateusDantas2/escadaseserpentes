@@ -6,24 +6,28 @@ public class Space {
 		START_HERE, HOME, REGULAR;
 	}
 	
-	private Type type;
 	private int number;
+	private Type type;
 	
-	public Space(Type type, int number) {
-		this.type = type;
+	public Space(int number, Type type) {
 		this.number = number;
-	}
-	
-	public Type getType() {
-		return type;
+		this.type = type;
 	}
 	
 	public int getNumber() {
 		return number;
 	}
+	
+	public Type getType() {
+		return type;
+	}
 
 	@Override
 	public String toString() {
-		return "Space [type=" + type + ", number=" + number + "]";
+		if (type == Type.REGULAR) {
+			return String.valueOf(number);
+		} else {
+			return number + " (" + type + ")";
+		}
 	}
 }
