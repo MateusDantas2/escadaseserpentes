@@ -20,4 +20,13 @@ public class Counter {
 	public void goTo(Space space) {
 		currentSpace = space;
 	}
+	
+	public void play(Board board) {
+		Dice dice = Dice.get();
+		int diceNumber = dice.roll();
+		
+		System.out.format("Jogador '%s'", name, "jogou o dado e o resultado foi: %d\n", name, diceNumber);
+		
+		board.move(this, diceNumber);
+	}
 }
