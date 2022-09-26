@@ -41,4 +41,10 @@ public class Board implements Printable {
 		}
 		System.out.println();
 	}
+
+	public void setupCounters(Counter[] counters) {
+		for (Counter counter : counters) {
+			counter.goTo(spaceStartHere);
+		}
+	}
 }
