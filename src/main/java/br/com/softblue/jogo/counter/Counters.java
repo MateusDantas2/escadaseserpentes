@@ -1,4 +1,7 @@
-package escadaseserpentes;
+package br.com.softblue.jogo.counter;
+
+import br.com.softblue.jogo.board.Board;
+import br.com.softblue.jogo.infrastructure.Printable;
 
 public class Counters implements Printable {
 	

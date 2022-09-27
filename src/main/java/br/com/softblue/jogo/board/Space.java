@@ -1,4 +1,4 @@
-package escadaseserpentes;
+package br.com.softblue.jogo.board;
 
 public class Space {
 	

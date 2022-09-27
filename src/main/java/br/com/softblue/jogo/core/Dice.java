@@ -1,4 +1,4 @@
-package escadaseserpentes;
+package br.com.softblue.jogo.core;
 
 import java.util.Random;
 

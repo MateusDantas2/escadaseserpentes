@@ -1,9 +1,11 @@
-package escadaseserpentes;
+package br.com.softblue.jogo.board;
 
 import java.util.Arrays;
 import java.util.concurrent.ConcurrentHashMap;
 
-import escadaseserpentes.Space.Type;
+import br.com.softblue.jogo.board.Space.Type;
+import br.com.softblue.jogo.counter.Counter;
+import br.com.softblue.jogo.infrastructure.Printable;
 
 public class Board implements Printable {
 	

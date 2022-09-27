@@ -1,4 +1,4 @@
-package escadaseserpentes;
+package br.com.softblue.jogo.infrastructure;
 
 public interface Printable {
 	

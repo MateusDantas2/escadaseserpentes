@@ -1,4 +1,8 @@
-package escadaseserpentes;
+package br.com.softblue.jogo.counter;
+
+import br.com.softblue.jogo.board.Board;
+import br.com.softblue.jogo.board.Space;
+import br.com.softblue.jogo.core.Dice;
 
 public class Counter {
 	
