@@ -14,7 +14,7 @@ public class Dice {
 	}
 	
 	public static Dice get() {
-		if (instance != null) {
+		if (instance == null) {
 			instance = new Dice();
 		}
 		return instance;

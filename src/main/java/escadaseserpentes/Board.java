@@ -9,6 +9,7 @@ public class Board implements Printable {
 	private Space[] spaces;
 	private Space spaceHome;
 	private Space spaceStartHere;
+	private Counter winnerCounter;
 	
 	public Board(int numSpaces) {
 		spaces = new Space[numSpaces + 2];
@@ -49,7 +50,27 @@ public class Board implements Printable {
 	}
 
 	public void move(Counter counter, int diceNumber) {
-		// TODO Auto-generated method stub
+		Space space = counter.getCurrentSpace();
+		int newSpaceNumber = space.getNumber() + diceNumber;
 		
+		Space newSpace;
+		
+		if (newSpaceNumber >= spaceHome.getNumber()) {
+			newSpace = spaceHome;
+			winnerCounter = counter;
+		} else {
+			newSpace = spaces[newSpaceNumber];
+		}
+		
+		counter.goTo(newSpace);
+		System.out.format("Jogador '%s' foi para a casa %s\n", counter.getName(), newSpace);
+	}
+	
+	public Counter getWinnerCounter() {
+		return winnerCounter;
+	}
+	
+	public boolean gameFinished() {
+		return winnerCounter != null;
 	}
 }
