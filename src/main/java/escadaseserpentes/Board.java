@@ -1,6 +1,7 @@
 package escadaseserpentes;
 
 import java.util.Arrays;
+import java.util.concurrent.ConcurrentHashMap;
 
 import escadaseserpentes.Space.Type;
 
@@ -64,6 +65,13 @@ public class Board implements Printable {
 		
 		counter.goTo(newSpace);
 		System.out.format("Jogador '%s' foi para a casa %s\n", counter.getName(), newSpace);
+		
+		Transition transition = newSpace.getTransition();
+		if (transition != null) {
+			System.out.format("Jogador '%s' encontrou uma %s na casa %s\n", counter.getName(), transition.getType(), newSpace);
+			counter.goTo(transition.getSpaceTo());
+			System.out.format("Jogador '%s' foi para a casa %s\n", counter.getName(), transition.getSpaceTo());
+		}
 	}
 	
 	public Counter getWinnerCounter() {
@@ -72,5 +80,14 @@ public class Board implements Printable {
 	
 	public boolean gameFinished() {
 		return winnerCounter != null;
+	}
+	
+	public void addTransition(int from, int to) {
+		Space spaceFrom = spaces[from];
+		Space spaceTo = spaces[to];
+		
+		Transition transition = new Transition(spaceFrom, spaceTo);
+		spaceFrom.setTransition(transition);
+		spaceTo.setTransition(transition);
 	}
 }
