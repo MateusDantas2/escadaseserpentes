@@ -48,7 +48,7 @@ git clone https://github.com/MateusDantas2/escadaseserpentes.git
 - [x] 2 - Dado
 - [x] 3 - Game
 - [x] 4 - Escadas e Serpentes
-- [ ] 5 - Nomes Jogadores
+- [x] 5 - Nomes Jogadores
 
 <hr>
 ### Autor
