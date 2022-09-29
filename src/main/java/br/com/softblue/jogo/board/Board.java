@@ -1,11 +1,10 @@
 package br.com.softblue.jogo.board;
 
-import java.util.Arrays;
-import java.util.concurrent.ConcurrentHashMap;
-
 import br.com.softblue.jogo.board.Space.Type;
 import br.com.softblue.jogo.counter.Counter;
 import br.com.softblue.jogo.infrastructure.Printable;
+
+import java.util.Arrays;
 
 public class Board implements Printable {
 	

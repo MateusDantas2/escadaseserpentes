@@ -7,7 +7,7 @@ import br.com.softblue.jogo.counter.Counters;
 public class Game {
 	
 	private static final int NUM_SPACES = 30;
-	private static final int NUM_PLAYERS = 2;
+	private static final int NUM_PLAYERS = 4;
 
     public void play() {
     	
