@@ -12,13 +12,18 @@
 <div align=center>
 <h3> Tela de Execução do Jogo </h3>
 
-<img border=1% src="/img/cod.png">
-<br>
+<img border=1% src="img/cod.png">
 <br>
 
 <h3> Tabuleiro Utilizado como Modelo para Codificação </h3>
 <br>
 <img border=1% src="img/snakes and ladders.png">
+<br>
+<h3> Jogo com o Nome dos Jogadores e o JOptionPane </h3>
+<br>
+<img border="1%" src="img/nomeJogadores.png">
+<hr>
+<img border="1%" src="img/caixa.png">
 </div>
 <br>
 <hr>
