@@ -1,13 +1,15 @@
 # Serpentes & Escadas
 
 <hr>
+
 # Sobre o Projeto:
 É um jogo para crianças de fácil jogabilidade e divertido. O objetivo do jogo é ser o primeiro jogador a atingir o fim, movendo-se pelo tabuleiro rolando um dado, do quadrado 1 até o de número 31. Você caminhará pelo tabuleiro desde a base até o topo, para a direita, para a esquerda e assim por diante. 
 - Se um jogador parar na cabeça de uma serpente, ele deverá escorregar seu peão até o quadrado com a ponta dela.
 - Se um jogador parar em um quadrado com a base de uma da escada, ele deverá mover seu peão até o quadrado no topo da escada e continuar dali.
 
 <hr>
-### 👨‍💻 Preview
+
+### 👨‍💻Preview
 
 <div align=center>
 <h3> Tela de Execução do Jogo </h3>
@@ -33,6 +35,7 @@
 - Gradle
 
 <hr>
+
 ### 👉 Pré-requisitos:
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
@@ -47,6 +50,7 @@ git clone https://github.com/MateusDantas2/escadaseserpentes.git
 
 ```
 <hr>
+
 ### 📌 Features
 
 - [x] 1 - Tabuleiro
@@ -56,6 +60,7 @@ git clone https://github.com/MateusDantas2/escadaseserpentes.git
 - [x] 5 - Nomes Jogadores
 
 <hr>
+
 ### Autor
 
 <a href="https://github.com/MateusDantas2">
